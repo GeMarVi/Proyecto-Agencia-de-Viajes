@@ -1,0 +1,34 @@
+extends ./layout/index
+
+block slider
+    .slider 
+        h1 Rio de Janeiro 
+        em Aventura
+
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ullam quo quaerat veniam molestiae, vero cum fuga libero optio numquam quibusdam sed est totam distinctio quasi voluptates aspernatur pariatur impedit?
+
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, eos. A cumque cupiditate ex, ratione blanditiis id ullam soluta! Non voluptatum nulla repellat magnam atque facere odit sapiente reiciendis ratione.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .col-md-6  
+                img(src="/img/inicio_nosotros.jpg", alt="sobre nosotros", class="img-fluid")
+
+        include ./layout/bloque-viajes
+
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha 20 Enero 2023 - 30 Enero 2023
+                        p.precio $25,000.00 MXN 
+    .container  
+        h2.text-center.mt-5 Testimoniales 
+        
+        include ./layout/bloque-testimoniales                    
